@@ -45,7 +45,7 @@ const Home = () => {
         // Load last booking details from the backend on component mount
         const fetchLastBookingData = async () => {
             try {
-                const response = await axios.get(process.env.REACT_APP_API_LOCAL_PATH);
+                const response = await axios.get(process.env.REACT_APP_API_LIVE_PATH);
                 if (response.status === 200) {
                     const lastBookingData = response.data;
                     setBookingData(lastBookingData);
@@ -132,7 +132,7 @@ const Home = () => {
                 };
 
                 // Make a POST request to the server
-                const response = await fetch(process.env.REACT_APP_API_LOCAL_PATH, {
+                const response = await fetch(process.env.REACT_APP_API_LIVE_PATH, {
                     method: "POST",
                     headers: {
                         "Content-Type": "application/json",
@@ -142,7 +142,7 @@ const Home = () => {
 
                 if (response.ok) {
                     // If the booking is successful, fetch the last booking details
-                    const lastBookingResponse = await fetch(process.env.REACT_APP_API_LOCAL_PATH);
+                    const lastBookingResponse = await fetch(process.env.REACT_APP_API_LIVE_PATH);
                     const lastBookingData = await lastBookingResponse.json();
 
                     // Update the state with the last booking details
