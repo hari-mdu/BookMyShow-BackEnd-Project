@@ -2,7 +2,7 @@
 
 ## BookMyShow
 
-This is the web application for booking and managing movie tickets, events, and shows. It is built using React for the frontend, Express for the backend, and MongoDB as the database. Bootstrap is used for the styling of the frontend.
+BookMyShow is a MERN stack application designed to streamline the process of booking movie tickets. The system provides users with a user-friendly interface to select movies, time slots, and seats, make bookings, and view their previous bookings. It consists of three main servers: frontend, backend, and database.
 
 ## Table of Contents
 
